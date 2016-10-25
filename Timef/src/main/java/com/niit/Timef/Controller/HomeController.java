@@ -28,13 +28,13 @@ public class HomeController {
 		
 	}
 
-	@RequestMapping("Login")
+	@RequestMapping("/login")
 	public String login(Model model)
 	{
 	model.addAttribute("userClickedLogin", "true");
 	return "index";
 	}
-	@RequestMapping("Register")
+	@RequestMapping("/register")
 	public String register(Model model)
 	{
 	model.addAttribute("userClickedRegister", "true");
