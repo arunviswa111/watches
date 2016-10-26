@@ -25,8 +25,8 @@
     
 </c:if>  
 
-<c:out value="${success}"></c:out>
-<c:out value="${error}"></c:out> 
-
+<c:out value="${success}"/>
+<c:out value="${error}"/> 
+${registermsg}
 </body>
 </html>
