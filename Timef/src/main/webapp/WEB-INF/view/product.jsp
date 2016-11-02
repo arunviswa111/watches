@@ -8,12 +8,5 @@
 </head>
 <body>
 
-
-<form action="validate">
-UserId :<input type="text" name="Userid">
-Password :<input type="password" name="Password">
-
-<input type="submit" value="Login">
-</form>
 </body>
 </html>

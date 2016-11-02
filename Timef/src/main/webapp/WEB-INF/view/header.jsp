@@ -43,6 +43,18 @@
         
         
       </ul>
+      <ul class="nav navbar-nav">
+      
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Category <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">supplier</a></li>
+          <li><a href="#">springform</a></li>
+          
+        </ul>
+      </li>
+      <li><a href="#">Contact us</a></li>
+      <li><a href="#">About us</a></li>
+    </ul>
       <ul class="nav navbar-nav navbar-right">
       <c:if test="${empty success}">
       <li><a href="register">Signup <span class="glyphicon glyphicon-user"></span></a></li>
@@ -75,7 +87,7 @@
 
       <div class="item">
         <img src="C:\Users\user\Desktop\New folder\2017-audi-a4 (1).jpg" alt="Audi" width="460" height="345">
-      </div>
+      </div> 
         <div class="item">
        <img src="C:\Users\user\Desktop\New folder\Audi-A7car.jpg" alt="Audi" width="460" height="345">
        </div>
