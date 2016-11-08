@@ -8,8 +8,9 @@ import org.springframework.web.bind.annotation.RequestParam;
 @Controller
 public class HomeController {
 	@RequestMapping("/")
-	public String gotoHome()
+	public String gotoHome(Model model)
 	{
+		model.addAttribute("carousel", "true");
 		return "index";
 	}
 	@RequestMapping("/registeration")
@@ -46,6 +47,23 @@ public class HomeController {
 	model.addAttribute("userClickedRegister", "true");
 	return "index";
 	}
-	
+	@RequestMapping("/home")
+	public String home(Model model)
+	{
+		model.addAttribute("carousel", "true");
+		return "index";
+	}
+	@RequestMapping("/aboutus")
+	public String aboutus(Model model)
+	{
+		model.addAttribute("userClickedAboutus", "true");
+		return "index";
+	}
+	@RequestMapping("/contactus")
+	public String contactus(Model model)
+	{
+		model.addAttribute("userClickedContactus", "true");
+		return "index";
+	}
 
 }
