@@ -6,20 +6,19 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 import org.springframework.stereotype.Component;
-
 @Entity
 @Table
 @Component
 public class Product {
 	@Id
 	private String id;
-	@Column
+	@Column(name="name")
 	private String name;
-	@Column
+	@Column(name="price")
 	private String price;
-	@Column
+	@Column(name="category_id")
 	private String category_id;
-	@Column
+	@Column(name="supplier_id")
 	private String supplier_id;
 	public String getId() {
 		return id;
@@ -51,6 +50,4 @@ public class Product {
 	public void setSupplier_id(String supplier_id) {
 		this.supplier_id = supplier_id;
 	}
-	
-
 }
