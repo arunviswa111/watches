@@ -6,7 +6,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Insert title here</title>
+<title>Time Quality</title>
 </head>
 <head>
   <title>Bootstrap Case</title>
@@ -15,10 +15,27 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style type="text/css">
   
+  .header1  {
+  float: left;
+  width: 50px;
+  height: 50px;
+  background: #555;
+ 
+}
+
+.header h2 {
+  position: center;
+  
+ }
+  </style>
 </head>
 <body>
-
+<div >
+  <img class="header1" src="https://thumb9.shutterstock.com/display_pic_with_logo/194326/374656126/stock-vector-vector-abstract-logo-idea-time-concept-or-clock-business-icon-creative-logotype-design-template-374656126.jpg" alt="logo" />
+  <h2>Timeless Quality</h2>
+</div>
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -27,7 +44,8 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="aboutus">TIMES QUALITY</a>
+      
+     
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
@@ -40,13 +58,15 @@
       
       <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Category <span class="caret"></span></a>
         <ul class="dropdown-menu">
-          <li><a href="#">supplier</a></li>
+          <li><a href="supplier">supplier</a></li>
           <li><a href="#">springform</a></li>
+          <li><a href="#">category</a></li>
           
         </ul>
       </li>
       <li><a href="contactus">Contact us</a></li>
       <li><a href="aboutus">About us</a></li>
+      
     </ul>
       <ul class="nav navbar-nav navbar-right">
       <c:if test="${empty success}">

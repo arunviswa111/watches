@@ -15,6 +15,43 @@
 	  margin: auto;
     
   }
+  .item{
+    background: white;    
+    text-align: center;
+    height: 300px !important;
+}
+
+.carousel{
+    margin-top: 20px;
+}
+
+.bs-example{
+	margin: 20px;
+}
+
+.carousel.carousel-fade .item {
+  opacity:0;
+  filter: alpha(opacity=0); /* ie fix */
+}
+
+.carousel.carousel-fade .active.item {
+    opacity:1;
+    filter: alpha(opacity=100); /* ie fix */
+}
+  
+  div.description
+  {
+  width:45%;
+  margin:10px;
+  padding:10px;
+  padding-bottom:275px;
+  border:2px solid black;
+  float:left;
+  }
+   div.video
+  {
+  padding:10px;
+  }
   </style>
 
 </head>
@@ -32,14 +69,14 @@
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
       <div class="item active">
-        <img src="C:\Users\user\Desktop\New folder\black.jpg" alt="Audi" width="460" height="345">
+        <img src="C:\Users\user\Desktop\New folder\wat.jpg" alt="Audi" width="460" height="500">
       </div>
 
       <div class="item">
-        <img src="C:\Users\user\Desktop\New folder\maxresdefault.jpg" alt="Audi" width="460" height="345">
+        <img src="C:\Users\user\Desktop\New folder\maxresdefault.jpg" alt="Audi" width="460" height="500">
       </div> 
         <div class="item">
-       <img src="C:\Users\user\Desktop\New folder\water.jpg" alt="Audi" width="460" height="345">
+       <img src="C:\Users\user\Desktop\New folder\water.jpg" alt="Audi" width="460" height="500">
        </div>
     </div>
 
@@ -54,7 +91,19 @@
     </a>
   </div>
 </div>
-
+<br>
+<br>
+<div class="description">
+<h1 style="padding-left:10px;">QUALITY</h1>
+<p></p>
+</div>
+<div class="video">
+<video  width="500" height="410" controls >
+<source src="https://www.youtube.com/watch?v=-4MnI4Dx_pQ"> 
+</video>
+</div>
+<br>
+<br>
   
 
 

@@ -6,7 +6,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Home page</title>
+<title>TimeLess Quality</title>
 </head>
 <body>
 
@@ -57,6 +57,8 @@
 		<jsp:include page="contactus.jsp"></jsp:include>
 
 	</c:if>
+	<jsp:include page="thumbnail.jsp"></jsp:include>
+	<jsp:include page="footer.jsp"></jsp:include>
 	 
 </body>
 </html>
