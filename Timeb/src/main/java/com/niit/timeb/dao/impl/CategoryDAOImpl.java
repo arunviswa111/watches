@@ -6,17 +6,21 @@ import org.hibernate.HibernateException;
 import org.hibernate.Query;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
 
 import com.niit.timeb.dao.CategoryDAO;
 import com.niit.timeb.model.Category;
-
+@Repository("categoryDAO")
 public class CategoryDAOImpl implements CategoryDAO {
 	@Autowired
 	SessionFactory sessionFactory;
 	
 	public CategoryDAOImpl(SessionFactory sessionFactory) {
+		this.sessionFactory=sessionFactory;
 	}
-
+	
+	@Transactional
 	public boolean save(Category catergory) {
 		
 		{
